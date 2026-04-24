@@ -1,0 +1,616 @@
+/* ========================================
+   PORTFÓLIO 2025 – Kallany Senabio
+   style.css
+   ======================================== */
+
+/* --- RESET & VARIABLES --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black:      #111111;
+  --dark:       #1a1a1a;
+  --gold:       #b8963e;
+  --gold-light: #d4aa5a;
+  --cream:      #f5f0e8;
+  --text:       #2c2c2c;
+  --text-muted: #555555;
+  --white:      #ffffff;
+  --nav-h:      56px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black);
+  height: var(--nav-h);
+  padding: 0 24px;
+  gap: 16px;
+  overflow: visible;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.logo-box {
+  background: var(--white);
+  color: var(--black);
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 2px;
+  line-height: 1;
+}
+
+.nav-title {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 4px;
+}
+
+.nav-links > li > a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 400;
+  padding: 8px 14px;
+  border-radius: 3px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.nav-links > li > a.active,
+.nav-links > li > a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.arrow {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+/* --- Dropdown --- */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--dark);
+  list-style: none;
+  min-width: 240px;
+  width: max-content;
+  border-top: 2px solid var(--gold);
+  z-index: 9999;
+  animation: fadeDown 0.15s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+/* Last nav item (T.DES) aligns dropdown to the right so it doesn't overflow */
+.nav-links > li:last-child > .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  color: var(--white);
+  text-decoration: none;
+  font-size: 13px;
+  transition: background 0.15s, color 0.15s;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.dropdown-menu li a:hover {
+  background: rgba(184,150,62,0.15);
+  color: var(--gold-light);
+}
+
+/* Sub-dropdown — abre para baixo, dentro do menu pai */
+.sub-dropdown .sub-menu {
+  display: none;
+  position: static;
+  background: rgba(255,255,255,0.05);
+  min-width: 100%;
+  border-top: none;
+  border-left: 3px solid var(--gold);
+  margin-left: 12px;
+}
+
+.sub-dropdown:hover > .sub-menu {
+  display: block;
+}
+
+.sub-dropdown > a {
+  justify-content: space-between;
+}
+
+.sub-dropdown > a .arrow {
+  transition: transform 0.2s;
+}
+
+.sub-dropdown:hover > a .arrow {
+  transform: rotate(180deg);
+}
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* ========================================
+   HERO
+   ======================================== */
+.hero {
+  position: relative;
+  height: 420px;
+  background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+}
+
+.hero-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 64px);
+  color: var(--white);
+  letter-spacing: 1px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero-line {
+  width: 60px;
+  height: 3px;
+  background: var(--gold);
+  margin: 14px auto 0;
+  animation: fadeUp 0.8s 0.2s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   CTA BUTTONS
+   ======================================== */
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  padding: 28px 40px;
+  background: var(--cream);
+  flex-wrap: wrap;
+}
+
+.cta-btn {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  background: var(--gold);
+  color: var(--white);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 14px 24px;
+  border-radius: 3px;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.cta-btn:hover {
+  background: var(--gold-light);
+  transform: translateY(-2px);
+}
+
+/* ========================================
+   DIVIDER
+   ======================================== */
+.divider {
+  border: none;
+  border-top: 1px dashed #c9bfa8;
+  margin: 0 40px;
+}
+
+/* ========================================
+   ABOUT
+   ======================================== */
+.about {
+  padding: 40px 40px 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text p {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.about-text p:first-child {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sign {
+  margin-top: 8px;
+  font-style: italic;
+  color: var(--text-muted) !important;
+}
+
+/* ========================================
+   GALLERY
+   ======================================== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px 40px 40px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #ccc;
+}
+
+/* Placeholder colors when no real images */
+.dog     { background: linear-gradient(135deg, #6b4c3b 0%, #3d2b1f 100%); }
+.friends { background: linear-gradient(135deg, #7a8c9e 0%, #3a4f60 100%); }
+.child   { background: linear-gradient(135deg, #9abecc 0%, #4a8096 100%); }
+
+.gallery-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+/* ========================================
+   TRIMESTRE HERO
+   ======================================== */
+.trimestre-hero {
+  position: relative;
+  height: 200px;
+  background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1400&q=80&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.trimestre-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.trimestre-content {
+  position: relative;
+  text-align: center;
+}
+
+.trimestre-content h2,
+.trimestre-content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 5vw, 48px);
+  color: var(--white);
+  letter-spacing: 1px;
+}
+
+.trimestre-subject {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 6px;
+}
+
+/* ========================================
+   ATIVIDADES HEADER
+   ======================================== */
+.atividades-header {
+  background: var(--gold);
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 0;
+}
+
+.atividades-header h2 {
+  color: var(--white);
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* ========================================
+   ACTIVITY CARD
+   ======================================== */
+.activity-section {
+  background: var(--cream);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.activity-card {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 40px;
+  align-items: start;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  max-width: 1000px;
+  border: 1px solid rgba(0,0,0,0.06);
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 30px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.activity-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  transform: translateY(-2px);
+}
+
+/* Embed area */
+.embed-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.embed-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.embed-frame {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border: none;
+  border-radius: 8px;
+  background: #f0ece4;
+  display: block;
+}
+
+.embed-frame-wide {
+  aspect-ratio: 16/9;
+}
+
+/* Activity text */
+.activity-info p {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.activity-info p strong {
+  font-weight: 700;
+}
+
+.activity-button-img {
+  width: 500px;     /* controla o tamanho */
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  align-self: flex-start; /* impede de esticar */
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+  background: var(--black);
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  margin-top: 60px;
+  letter-spacing: 0.5px;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activity-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    background: var(--dark);
+    padding: 12px 0;
+    gap: 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links > li > a {
+    padding: 12px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .dropdown-menu {
+    position: static;
+    border-top: none;
+    border-left: 3px solid var(--gold);
+    background: rgba(255,255,255,0.04);
+  }
+
+  /* sub-menu já é static por padrão */
+
+  .cta-buttons {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about {
+    padding: 28px 20px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 24px 20px;
+  }
+
+  .activity-section {
+    padding: 20px;
+  }
+
+  .divider {
+    margin: 0 20px;
+  }
+}
+
+/* ========================================
+   EMPTY STATE
+   ======================================== */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--text-muted);
+  background: var(--white);
+  border-radius: 8px;
+  max-width: 1000px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.empty-state p {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.empty-state span {
+  font-size: 13px;
+  color: var(--text-muted);
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linguagens – 2° Trimestre | Portfólio 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="logo-box">SESI</div>
+      <span class="nav-title">Portfólio 2025</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Início</a></li>
+
+      <li class="dropdown">
+        <a href="#" class="active">Ensino Médio <span class="arrow">&#8964;</span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown sub-dropdown">
+            <a href="#" >Natureza <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="natureza-trimestre1.html" >1° Trimestre</a></li>
+              <li><a href="natureza-trimestre2.html" >2° Trimestre</a></li>
+              <li><a href="natureza-trimestre3.html" >3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#" >Humanas <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="humanas-trimestre1.html" >1° Trimestre</a></li>
+              <li><a href="humanas-trimestre2.html" >2° Trimestre</a></li>
+              <li><a href="humanas-trimestre3.html" >3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#" >Matematica <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="matematica-trimestre1.html" >1° Trimestre</a></li>
+              <li><a href="matematica-trimestre2.html" >2° Trimestre</a></li>
+              <li><a href="matematica-trimestre3.html" >3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#" class="active">Linguagens <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="linguagens-trimestre1.html" >1° Trimestre</a></li>
+              <li><a href="linguagens-trimestre2.html" class="active">2° Trimestre</a></li>
+              <li><a href="linguagens-trimestre3.html" >3° Trimestre</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a href="#">T.DES <span class="arrow">&#8964;</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Fundamentos de Tecnologia</a></li>
+          <li><a href="#">Fundamentos de Eletrônica</a></li>
+          <li><a href="#">Lógica Computacional</a></li>
+          <li><a href="#">Fundamentos De Rede</a></li>
+          <li><a href="#">Fundamentos de Banco de Dados</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="trimestre-hero" style="background-image: url('https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1400&q=80');">
+    <div class="trimestre-overlay" style="background: linear-gradient(to bottom, #3b1b5acc, #3b1b5a88);"></div>
+    <div class="trimestre-content">
+      <p class="trimestre-subject">Linguagens</p>
+      <h1>2° Trimestre</h1>
+      <div class="hero-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ATIVIDADES HEADER ===== -->
+  <section class="atividades-header">
+    <h2>ATIVIDADES</h2>
+  </section>
+
+  <!-- ===== ACTIVITY SECTION ===== -->
+  <section class="activity-section">
+
+    <div class="empty-state">
+      <div class="empty-icon">📂</div>
+      <p>Nenhuma atividade cadastrada ainda.</p>
+      <span>Adicione atividades editando este arquivo HTML.</span>
+    </div>
+
+    <!--
+      Para adicionar uma atividade, copie e cole o bloco abaixo:
+
+      <div class="activity-card">
+        <div class="activity-video">
+          <div class="video-thumb">
+            <div class="video-info">
+              <p class="video-channel">Nome do canal</p>
+              <p class="video-title-label">Título do vídeo</p>
+            </div>
+            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-play-btn" aria-label="Assistir no YouTube">
+              <svg viewBox="0 0 68 48" width="68" height="48">
+                <path d="M66.5 7.8A8.5 8.5 0 0 0 60.7 2C55.3.5 34 .5 34 .5S12.7.5 7.3 2A8.5 8.5 0 0 0 1.5 7.8C0 13.2 0 24 0 24s0 10.8 1.5 16.2A8.5 8.5 0 0 0 7.3 46C12.7 47.5 34 47.5 34 47.5s21.3 0 26.7-1.5a8.5 8.5 0 0 0 5.8-5.8C68 34.8 68 24 68 24S68 13.2 66.5 7.8z" fill="red"/>
+                <path d="M27 34l18-10-18-10v20z" fill="white"/>
+              </svg>
+            </a>
+            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-watch-link">Assista no YouTube</a>
+          </div>
+        </div>
+        <div class="activity-info">
+          <p><strong>Atividade:</strong> Nome da atividade</p>
+          <p><strong>Habilidades desenvolvidas:</strong> ...</p>
+          <p><strong>Objetivo:</strong> ...</p>
+          <p><strong>Resumo:</strong> ...</p>
+          <p><strong>Crítica pessoal:</strong> ...</p>
+        </div>
+      </div>
+    -->
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2025 Kallany Santos Senabio · SESI SENAI · Portfólio Acadêmico</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
