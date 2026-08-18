@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="nav-brand">
       <div class="logo-box">SESI</div>
@@ -23,33 +24,33 @@
           <li class="dropdown sub-dropdown">
             <a href="#" class="active">Natureza <span class="arrow">&#8964;</span></a>
             <ul class="dropdown-menu sub-menu">
-              <li><a href="natureza-trimestre1.html" >1° Trimestre</a></li>
-              <li><a href="natureza-trimestre2.html" class="active">2° Trimestre</a></li>
-              <li><a href="natureza-trimestre3.html" >3° Trimestre</a></li>
+              <li><a href="natureza-trimestre1.html" class="active">1° Trimestre</a></li>
+              <li><a href="natureza-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="natureza-trimestre3.html">3° Trimestre</a></li>
             </ul>
           </li>
           <li class="dropdown sub-dropdown">
-            <a href="#" >Humanas <span class="arrow">&#8964;</span></a>
+            <a href="#">Humanas <span class="arrow">&#8964;</span></a>
             <ul class="dropdown-menu sub-menu">
-              <li><a href="humanas-trimestre1.html" >1° Trimestre</a></li>
-              <li><a href="humanas-trimestre2.html" >2° Trimestre</a></li>
-              <li><a href="humanas-trimestre3.html" >3° Trimestre</a></li>
+              <li><a href="humanas-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="humanas-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="humanas-trimestre3.html">3° Trimestre</a></li>
             </ul>
           </li>
           <li class="dropdown sub-dropdown">
-            <a href="#" >Matematica <span class="arrow">&#8964;</span></a>
+            <a href="#">Matemática <span class="arrow">&#8964;</span></a>
             <ul class="dropdown-menu sub-menu">
-              <li><a href="matematica-trimestre1.html" >1° Trimestre</a></li>
-              <li><a href="matematica-trimestre2.html" >2° Trimestre</a></li>
-              <li><a href="matematica-trimestre3.html" >3° Trimestre</a></li>
+              <li><a href="matematica-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="matematica-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="matematica-trimestre3.html">3° Trimestre</a></li>
             </ul>
           </li>
           <li class="dropdown sub-dropdown">
-            <a href="#" >Linguagens <span class="arrow">&#8964;</span></a>
+            <a href="#">Linguagens <span class="arrow">&#8964;</span></a>
             <ul class="dropdown-menu sub-menu">
-              <li><a href="linguagens-trimestre1.html" >1° Trimestre</a></li>
-              <li><a href="linguagens-trimestre2.html" >2° Trimestre</a></li>
-              <li><a href="linguagens-trimestre3.html" >3° Trimestre</a></li>
+              <li><a href="linguagens-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="linguagens-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="linguagens-trimestre3.html">3° Trimestre</a></li>
             </ul>
           </li>
         </ul>
@@ -58,11 +59,30 @@
       <li class="dropdown">
         <a href="#">T.DES <span class="arrow">&#8964;</span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Fundamentos de Tecnologia</a></li>
-          <li><a href="#">Fundamentos de Eletrônica</a></li>
-          <li><a href="#">Lógica Computacional</a></li>
-          <li><a href="#">Fundamentos De Rede</a></li>
-          <li><a href="#">Fundamentos de Banco de Dados</a></li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">IOT <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="iot-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="iot-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="iot-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">Modelagem de Sistemas <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="modelagem-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="modelagem-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="modelagem-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">Banco de Dados <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="bancodados-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="bancodados-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="bancodados-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -73,8 +93,8 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="trimestre-hero" style="background-image: url('https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=1400&q=80');">
-    <div class="trimestre-overlay" style="background: linear-gradient(to bottom, #2d5a1bcc, #2d5a1b88);"></div>
+  <section class="trimestre-hero">
+    <div class="trimestre-overlay"></div>
     <div class="trimestre-content">
       <p class="trimestre-subject">Natureza</p>
       <h1>2° Trimestre</h1>
@@ -87,45 +107,87 @@
     <h2>ATIVIDADES</h2>
   </section>
 
-  <!-- ===== ACTIVITY SECTION ===== -->
-  <section class="activity-section">
+ <!-- ===== ACTIVITY CARDS ===== -->
+<section class="activity-section">
 
-    <div class="empty-state">
-      <div class="empty-icon">📂</div>
-      <p>Nenhuma atividade cadastrada ainda.</p>
-      <span>Adicione atividades editando este arquivo HTML.</span>
+  <!-- Atividade 1 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://canva.link/dkg5qji33sxck5m" target="_blank">
+        <img 
+          src="mural_biologia.jpeg" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
     </div>
 
-    <!--
-      Para adicionar uma atividade, copie e cole o bloco abaixo:
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> MURAL INTERATIVO</p>
+      <p><strong>Habilidades desenvolvidas:</strong> C2, H11, C3, H15, H18, C4 e H23 </p>
+      <p><strong>Objetivo:</strong> Compreender os impactos das ações humanas no meio ambiente e a importância da preservação e da saúde.</p>
+      <p><strong>Resumo:</strong> A atividade foi realizada em grupo com a criação de um mural interativo. Cada aluno produziu uma parte do trabalho e, depois, todas as informações foram organizadas em conjunto. Foram abordados temas relacionados ao meio ambiente, à preservação e aos efeitos das ações humanas na saúde e na qualidade de vida.</p>
+      <p><strong>Crítica pessoal:</strong> Eu achei a atividade interessante, pois tivemos a oportunidade de trabalhar em equipe e aprender mais sobre os problemas ambientais. Também foi possível entender melhor como nossas atitudes podem influenciar o meio ambiente e nossa qualidade de vida.
+</p>
 
-      <div class="activity-card">
-        <div class="activity-video">
-          <div class="video-thumb">
-            <div class="video-info">
-              <p class="video-channel">Nome do canal</p>
-              <p class="video-title-label">Título do vídeo</p>
-            </div>
-            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-play-btn" aria-label="Assistir no YouTube">
-              <svg viewBox="0 0 68 48" width="68" height="48">
-                <path d="M66.5 7.8A8.5 8.5 0 0 0 60.7 2C55.3.5 34 .5 34 .5S12.7.5 7.3 2A8.5 8.5 0 0 0 1.5 7.8C0 13.2 0 24 0 24s0 10.8 1.5 16.2A8.5 8.5 0 0 0 7.3 46C12.7 47.5 34 47.5 34 47.5s21.3 0 26.7-1.5a8.5 8.5 0 0 0 5.8-5.8C68 34.8 68 24 68 24S68 13.2 66.5 7.8z" fill="red"/>
-                <path d="M27 34l18-10-18-10v20z" fill="white"/>
-              </svg>
-            </a>
-            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-watch-link">Assista no YouTube</a>
-          </div>
-        </div>
-        <div class="activity-info">
-          <p><strong>Atividade:</strong> Nome da atividade</p>
-          <p><strong>Habilidades desenvolvidas:</strong> ...</p>
-          <p><strong>Objetivo:</strong> ...</p>
-          <p><strong>Resumo:</strong> ...</p>
-          <p><strong>Crítica pessoal:</strong> ...</p>
-        </div>
-      </div>
-    -->
 
-  </section>
+    </div>
+  </div>
+</section>
+
+    <!-- Atividade 2 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://canva.link/cobb8w2suw9mq6g" target="_blank">
+        <img 
+          src="etanol_biocombustiveis.png" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
+    </div>
+
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> SEMINÁRIO SOBRE ESTEQUIOMETRIA NA INDÚSTRIA</p>
+      <p><strong>Habilidades desenvolvidas:</strong> C2, H6, H7 e H9 </p>
+      <p><strong>Objetivo:</strong> Entender a Estequiometria e sua importância nos processos industriais.</p>
+      <p><strong>Resumo:</strong> A atividade foi realizada por meio da preparação e apresentação de um seminário sobre o uso da Estequiometria na indústria, principalmente na produção de etanol e outros biocombustíveis. Durante a pesquisa, estudamos as reações químicas, as quantidades de reagentes e produtos e como esses fatores influenciam o funcionamento e o rendimento dos processos industriais. </p>
+      <p><strong>Crítica pessoal:</strong> Achei a atividade interessante, pois ajudou a perceber como os conteúdos de Química aprendidos em sala podem ser aplicados na indústria. Também foi uma forma de entender melhor a importância da Estequiometria para controlar e melhorar diferentes processos.</p>
+    </div>
+
+  </div>
+  
+
+  <!-- Atividade 3 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://drive.google.com/file/d/1zgw7z3rS2BAHzuetkFUjpgA3cESy47Bg/view?usp=sharing" target="_blank">
+        <img 
+          src="eletro.webp" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
+    </div>
+
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> CARTILHA ELETRICIDADE E O CORPO HUMANO</p>
+      <p><strong>Habilidades desenvolvidas:</strong> C1, H3, H4, C2, H12, C4 e H23 </p>
+      <p><strong>Objetivo:</strong> Entender os efeitos da eletricidade no corpo humano e a importância dos cuidados para evitar acidentes.</p>
+      <p><strong>Resumo:</strong> A atividade envolveu a criação de uma cartilha educativa sobre a relação entre a eletricidade e o organismo humano. Foram pesquisadas informações científicas e organizados textos, imagens e outros recursos para explicar os efeitos da eletricidade no corpo e apresentar formas de prevenção de acidentes. </p>
+      <p><strong>Crítica pessoal:</strong> Achei a atividade interessante, pois ajudou a entender melhor como a eletricidade pode afetar o corpo humano. Também mostrou como conhecer os riscos e os cuidados necessários é importante para evitar acidentes e preservar a saúde.
+    </div>
+
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">

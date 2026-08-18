@@ -47,8 +47,8 @@
           <li class="dropdown sub-dropdown">
             <a href="#" class="active">Linguagens <span class="arrow">&#8964;</span></a>
             <ul class="dropdown-menu sub-menu">
-              <li><a href="linguagens-trimestre1.html" >1° Trimestre</a></li>
-              <li><a href="linguagens-trimestre2.html" class="active">2° Trimestre</a></li>
+              <li><a href="linguagens-trimestre1.html" class="active">1° Trimestre</a></li>
+              <li><a href="linguagens-trimestre2.html" >2° Trimestre</a></li>
               <li><a href="linguagens-trimestre3.html" >3° Trimestre</a></li>
             </ul>
           </li>
@@ -58,11 +58,30 @@
       <li class="dropdown">
         <a href="#">T.DES <span class="arrow">&#8964;</span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Fundamentos de Tecnologia</a></li>
-          <li><a href="#">Fundamentos de Eletrônica</a></li>
-          <li><a href="#">Lógica Computacional</a></li>
-          <li><a href="#">Fundamentos De Rede</a></li>
-          <li><a href="#">Fundamentos de Banco de Dados</a></li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">IOT <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="iot-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="iot-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="iot-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">Modelagem de Sistemas <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="modelagem-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="modelagem-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="modelagem-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
+          <li class="dropdown sub-dropdown">
+            <a href="#">Banco de Dados <span class="arrow">&#8964;</span></a>
+            <ul class="dropdown-menu sub-menu">
+              <li><a href="bancodados-trimestre1.html">1° Trimestre</a></li>
+              <li><a href="bancodados-trimestre2.html">2° Trimestre</a></li>
+              <li><a href="bancodados-trimestre3.html">3° Trimestre</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -87,45 +106,89 @@
     <h2>ATIVIDADES</h2>
   </section>
 
-  <!-- ===== ACTIVITY SECTION ===== -->
-  <section class="activity-section">
+  <!-- ===== ACTIVITY CARDS ===== -->
+<section class="activity-section">
 
-    <div class="empty-state">
-      <div class="empty-icon">📂</div>
-      <p>Nenhuma atividade cadastrada ainda.</p>
-      <span>Adicione atividades editando este arquivo HTML.</span>
+  <!-- Atividade 1 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://docs.google.com/document/d/1a4Sglg5YQOpX2RQCZglhW6988Dt7sggyf80ieN-vyi4/edit?usp=sharing" target="_blank">
+        <img 
+          src="actor.png" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
     </div>
 
-    <!--
-      Para adicionar uma atividade, copie e cole o bloco abaixo:
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> A Paixão segundo G.H</p>
+      <p><strong>Habilidades desenvolvidas:</strong> H25 </p>
+      <p><strong>Objetivo:</strong> Praticar a escrita em inglês usando o Simple Past e ampliar o vocabulário sobre cultura e artes.</p>
+      <p><strong>Resumo:</strong> A atividade foi realizada individualmente, com a produção de textos em inglês sobre um artista, um filme e uma música escolhidos pelo aluno. Foi necessário pesquisar informações sobre cada tema, como sua história, características e autores, além de explicar os motivos das escolhas. Também foram utilizadas imagens para complementar os conteúdos apresentados.</p>
+      <p><strong>Crítica pessoal:</strong> Achei a atividade interessante porque pude praticar o inglês falando sobre temas que gosto. Além disso, foi uma maneira de melhorar minha escrita e aprender a utilizar o Simple Past enquanto pesquisava mais sobre artistas e obras que conheço.
 
-      <div class="activity-card">
-        <div class="activity-video">
-          <div class="video-thumb">
-            <div class="video-info">
-              <p class="video-channel">Nome do canal</p>
-              <p class="video-title-label">Título do vídeo</p>
-            </div>
-            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-play-btn" aria-label="Assistir no YouTube">
-              <svg viewBox="0 0 68 48" width="68" height="48">
-                <path d="M66.5 7.8A8.5 8.5 0 0 0 60.7 2C55.3.5 34 .5 34 .5S12.7.5 7.3 2A8.5 8.5 0 0 0 1.5 7.8C0 13.2 0 24 0 24s0 10.8 1.5 16.2A8.5 8.5 0 0 0 7.3 46C12.7 47.5 34 47.5 34 47.5s21.3 0 26.7-1.5a8.5 8.5 0 0 0 5.8-5.8C68 34.8 68 24 68 24S68 13.2 66.5 7.8z" fill="red"/>
-                <path d="M27 34l18-10-18-10v20z" fill="white"/>
-              </svg>
-            </a>
-            <a href="URL_DO_YOUTUBE" target="_blank" class="yt-watch-link">Assista no YouTube</a>
-          </div>
-        </div>
-        <div class="activity-info">
-          <p><strong>Atividade:</strong> Nome da atividade</p>
-          <p><strong>Habilidades desenvolvidas:</strong> ...</p>
-          <p><strong>Objetivo:</strong> ...</p>
-          <p><strong>Resumo:</strong> ...</p>
-          <p><strong>Crítica pessoal:</strong> ...</p>
-        </div>
-      </div>
-    -->
+</p>
 
-  </section>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Atividade 2 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://canva.link/y8i3dk378b57hx0" 
+      target="_blank">
+        <img 
+          src="redacao.png" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
+    </div>
+
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> REDAÇÃO RED1000 – 2º TRIMESTRE </p>
+      <p><strong>Habilidades desenvolvidas:</strong> H22 </p>
+      <p><strong>Objetivo:</strong> Aprimorar a produção de textos argumentativos, organizando ideias de forma clara e coerente.</p>
+      <p><strong>Resumo:</strong> A atividade envolveu a produção de uma redação para o Red1000, seguindo um modelo de estrutura definido e utilizando técnicas de argumentação e organização textual. Depois da correção, a nota obtida foi registrada para fazer parte do portfólio. </p>
+      <p><strong>Crítica pessoal:</strong> Achei a atividade importante para melhorar minha escrita e aprender a desenvolver melhor meus argumentos. A correção também ajudou a perceber quais pontos ainda preciso melhorar nas minhas redações.</p>
+    </div>
+
+  </div>
+  
+   <!-- Atividade 3 -->
+  <div class="activity-card">
+    <div class="embed-wrapper">
+      <span class="embed-label">Acessar atividade</span>
+
+      <!-- Botão com imagem -->
+      <a href="https://drive.google.com/file/d/1qVw2pOqX_Xl3FYRdMwmdaJmMd04HO2fL/view" 
+      target="_blank">
+        <img 
+          src="prego.png" 
+          alt="Abrir atividade"
+          class="activity-button-img">
+      </a>
+
+    </div>
+
+    <div class="activity-info">
+      <p><strong>Atividade:</strong> MANIFESTO CONTEMPORÂNEO </p>
+      <p><strong>Habilidades desenvolvidas:</strong> H3 e H24 </p>
+      <p><strong>Objetivo:</strong> Conhecer o gênero manifesto e desenvolver argumentos para abordar temas atuais de forma crítica e criativa.</p>
+      <p><strong>Resumo:</strong> A atividade começou com o estudo dos manifestos Pau-Brasil e Antropófago, de Oswald de Andrade, relacionando suas ideias ao Modernismo brasileiro e à Semana de Arte Moderna. Depois, em grupo, foi produzido um manifesto sobre um assunto atual, utilizando argumentos, frases de impacto e recursos visuais para montar uma apresentação em vídeo. </p>
+      <p><strong>Crítica pessoal:</strong> Achei a atividade criativa e interessante, pois ajudou a entender melhor o Modernismo e suas principais ideias. Também gostei de poder criar um manifesto sobre um tema atual e apresentar o trabalho de uma forma diferente por meio do vídeo.</p>
+    </div>
+
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
